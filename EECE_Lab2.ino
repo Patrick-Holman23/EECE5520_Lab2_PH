@@ -53,11 +53,6 @@ void loop(){
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
 
-  //Serial.print(" | AcX = "); Serial.println(AcX);
-  //Serial.print(" | AcY = "); Serial.println(AcY);
-  //Serial.print(" | AcZ = "); Serial.println(AcZ);
-  //Serial.println("\n");
-
   if (GyX < -20000){
     Serial.print("d");
   }
